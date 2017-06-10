@@ -8,13 +8,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://use.fontawesome.com/6451d784c3.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400" rel="stylesheet">
   </head>
-
-  <body onload="showBio()">
-    <%= yield %>
-  </body>
-
-  <div id="footer">
+  <div id="header">
     <a onclick="showBio()">
       <i class="fa fa-user-circle" aria-hidden="true"></i>
       Bio
@@ -30,5 +26,18 @@
     <a onclick="showContact()">
     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
     Contact</a>
+    <div id="title-header">
+      <div id="header-text">
+        <p>Andrew Southard</p>
+      </div>
+      <div id="sub-header">
+        <p>
+          Full-Stack Web Developer
+        </p>
+      </div>
+    </div>
   </div>
+  <body onload="showBio()">
+    <%= yield %>
+  </body>
 </html>
